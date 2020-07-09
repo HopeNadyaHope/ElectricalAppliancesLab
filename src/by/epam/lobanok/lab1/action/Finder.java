@@ -9,8 +9,8 @@ public class Finder {
 
 	public ArrayList<String> findAppliances(String type, String characteristic, String value) throws Exception{
 		File file = new File("appliances_db.txt");
-    	Scanner in = new Scanner(file);    	
-    	ArrayList<String> neededLines = new ArrayList<String>();
+    		Scanner in = new Scanner(file);    	
+    		ArrayList<String> neededLines = new ArrayList<String>();
 		String line;
 		String characteristicAndValue;
 		characteristicAndValue = characteristic + "=" + value;
@@ -21,7 +21,7 @@ public class Finder {
 				neededLines.add(line);
 			}
 		}
-    	in.close();
+    		in.close();
 		return neededLines;
 	}
 
